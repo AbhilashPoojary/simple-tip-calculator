@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Mono", monospace, sans-serif;
+  background: hsl(185, 41%, 84%);
+}
+p,
+label {
+  font-weight: bold;
+  color: hsl(184, 14%, 56%);
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1440px;
+}
+.container {
+  max-width: 1440px;
+}
+.card,
+.card-wrapper {
+  border: 0;
+  border-radius: 15px;
+  width: 760px;
+}
+.left {
+  max-width: 50%;
+}
+.left .form-group label {
+  width: 100%;
+}
+.right {
+  background: hsl(183, 100%, 15%);
+  width: 50%;
+  border-radius: 15px;
+  padding: 20px;
+  color: hsl(0, 0%, 100%);
+  margin-left: 2%;
+}
+.right p {
+  color: hsl(0, 0%, 100%);
+}
+.right h3 {
+  color: hsl(172, 67%, 45%);
+}
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: hsl(0, 0%, 100%);
+}
+.logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.tip-section {
+  margin-top: 1rem;
+}
+.tip-section ul {
+  list-style-type: none;
+  padding: 0;
+  column-count: 3;
+  margin: 0;
+}
+.tip-section ul li {
+  border-radius: 5px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  width: auto;
+  padding: 7px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.right button.card-btn {
+  display: inline-block;
+  width: 100%;
+  background: hsl(172, 67%, 45%);
+  border: none;
+  outline: none;
+  color: hsl(183, 100%, 15%);
+  font-weight: bold;
+}
+.total {
+  margin-bottom: 90px;
+}
+.input-danger {
+  border: 1px solid #f00;
+}
+.input-danger:hover {
+  border: 1px solid #f00;
+  outline: 0;
+  box-shadow: none;
+}
+.custom-tip {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  width: auto;
+  padding: 5px 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background: hsl(185, 41%, 84%);
+  border: none;
+  outline: none;
+  height: 35px;
+}
+.tip-section + .form-group label {
+  width: 100%;
+}
+.tip-section + .form-group {
+  position: relative;
+}
+.tip-section + .form-group label span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.span-danger {
+  color: #f00;
+  display: block !important;
+}
+.tip-section ul li.active {
+  background: hsl(172, 67%, 45%);
+}
+@media only screen and (max-width: 767px) {
+  .card-wrapper {
+    display: initial;
+    padding: 10px;
+  }
+  .card,
+  .card-wrapper {
+    max-width: 700px;
+    width: auto;
+    box-sizing: border-box;
+  }
+  .left,
+  .right {
+    max-width: 100%;
+    width: 100%;
+  }
+  .logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .wrapper {
+    position: initial;
+    top: 0;
+    left: 0;
+    transform: initial;
+  }
+  .right {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .custom-tip {
+    width: 100%;
+  }
+}
